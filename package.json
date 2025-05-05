@@ -1,0 +1,15 @@
+{
+  "name": "express-like-thing",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "triddov",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
