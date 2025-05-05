@@ -1,5 +1,5 @@
 import { App } from "./framework/App.js"
-import userRouter from "./src/user.js"
+import userRouter from "./src/user-routes.js"
 import jsonParser from "./framework/widdlewares/parsejson.js"
 import urlParser from "./framework/widdlewares/parseurl.js"
 import dotenv from "dotenv"

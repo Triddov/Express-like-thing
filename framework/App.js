@@ -40,7 +40,7 @@ export class App{
                 }
 
                 this.middlewares.forEach(middleware => middleware(req, res))
-                console.log(req.pathname)
+                // console.log(req.pathname)
                 const emitted = this.emitter.emit(this._getRouteMask(req.pathname, req.method), req, res )
 
                 if (!emitted) {
