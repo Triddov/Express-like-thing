@@ -8,18 +8,16 @@ const userData = {
 }
 
 router.get("/users", (req, res) => {
-    res.end(JSON.stringify(userData["user"]))
+    res.send(userData["user"])
 })
 
 router.post("/users", (req, res) => {
-    res.end(JSON.stringify(userData["user"]) + " this is post method")
+    console.log(req.body)
+    res.send(`alright`)
 })
 
 router.get("/admin", (req, res) => {
-    res.writeHead(200, {
-        "Content-Type": "application/json"
-    })
-    res.end(JSON.stringify(userData))
+    res.send(userData)
 })
 
 export default router
